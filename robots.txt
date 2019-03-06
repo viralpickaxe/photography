@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://photography.iamjamiedavies.com/sitemap.xml
+Host: https://photography.iamjamiedavies.com
