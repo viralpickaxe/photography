@@ -1,0 +1,38 @@
+@import "../../../assets/sass/vars";
+
+.Image {
+  position: relative;
+  margin-bottom: 30px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.Card {
+  position: absolute;
+  right: -10px;
+  bottom: 30px;
+  background: $font-primary;
+  color: $background;
+  padding: 15px 15px 11px;
+  font-size: 14px;
+  border-radius: 3px 0 0 3px;
+  line-height: 1;
+  z-index: 2;
+  box-shadow: -2px 2px 7px 1px rgba(0,0,0,0.36);
+}
+
+.Tick {
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 10px solid lighten($font-primary, 20%);
+  position: absolute;
+  bottom: 15px;
+  right: -10px;
+}
