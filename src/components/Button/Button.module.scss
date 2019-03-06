@@ -1,0 +1,18 @@
+@import "../../../assets/sass/vars";
+
+.Button {
+  display: inline-block;
+  color: $primary;
+  line-height: 1;
+  cursor: pointer;
+  font-size: 13px;
+  border: 1px solid $primary;
+  border-radius: 2px;
+  padding: 18px 23px;
+  font-family: $SFMono;
+  transition: background-color 0.15s $animate 0s;
+
+  &:hover {
+    background-color: transparentize($primary, 0.93);
+  }
+}

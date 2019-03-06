@@ -1,0 +1,43 @@
+@import "../../assets/sass/vars";
+
+.Container {
+  width: 100%;
+  padding: 0 150px;
+
+  @include onDesktop { padding: 0 100px; }
+  @include onTablet { padding: 0 50px; }
+  @include onPhablet { padding: 0 30px; }
+}
+
+.Main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+
+  @include onTablet { display: block; }
+}
+
+.Sidebar, .Gallery {
+  flex-grow: 0;
+  padding-top: 150px;
+
+  @include onDesktop { padding-top: 100px; }
+}
+
+.Sidebar {
+  position: sticky;
+  top: 0;
+
+  @include onTablet { position: initial; }
+}
+
+.Gallery {
+  flex-grow: 1;
+  padding-left: 30px;
+  padding-bottom: 150px;
+
+  @include onDesktop { padding-bottom: 100px; }
+  @include onTablet { padding-top: 50px; padding-left: 0; }
+}
